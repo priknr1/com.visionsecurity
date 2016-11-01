@@ -59,8 +59,8 @@
         	"class": "other",
         	"capabilities": [ "onoff", "measure_battery" ],
              "images": {
-                "large": "/drivers/ZM1601/assets/images/large.jpg",
-                "small": "/drivers/ZM1601/assets/images/small.jpg"
+                "large": "/drivers/ZM1601/assets/images/large.png",
+                "small": "/drivers/ZM1601/assets/images/small.png"
             },
             "settings": [
             	{
