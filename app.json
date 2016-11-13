@@ -3,7 +3,7 @@
 	"name": {
 		"en": "Vision Security"
 	},
-	"version": "0.1.0",
+	"version": "1.1.0",
 	"compatibility": ">=0.9.3",
 	"description": {
 		"en": "Vision Security devices for Homey"
@@ -61,6 +61,119 @@
              "images": {
                 "large": "/drivers/ZM1601/assets/images/large.png",
                 "small": "/drivers/ZM1601/assets/images/small.png"
+            },
+            "settings": [
+            	{
+                    "id": "siren_strobe_mode",
+                    "type": "dropdown",
+                    "label": {
+                        "en": "Siren strobe mode",
+                        "nl": "Sirene en stroboscoop"
+                    },
+                    "value": "0",
+                    "values": [
+                        {
+                            "id": "0",
+                            "label": {
+                                "en": "Siren and strobe",
+                                "nl": "Sirene en stroboscoop"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "label": {
+                                "en": "Siren only",
+                                "nl": "Alleen sirene"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "label": {
+                                "en": "Strobe only",
+                                "nl": "Alleen stroboscoop"
+                            }
+                        }
+                    ]
+                },
+            	{
+                    "id": "alarm_auto_stop",
+                    "type": "dropdown",
+                    "label": {
+                        "en": "Alarm auto stop",
+                        "nl": "Automatische alarm stop"
+                    },
+                    "value": "0",
+                    "values": [
+                        {
+                            "id": "0",
+                            "label": {
+                                "en": "30 seconds",
+                                "nl": "30 seconden"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "label": {
+                                "en": "60 seconds",
+                                "nl": "60 seconden"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "label": {
+                                "en": "120 seconds",
+                                "nl": "120 seconden"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "label": {
+                                "en": "No automatic stop",
+                                "nl": "Geen automatische stop"
+                            }
+                        }
+                    ]
+                }
+            ]
+		},
+        {
+        	"id": "ZM1602",
+        	"name": {
+        		"en": "DC/AC Power Siren",
+        		"nl": "DC/AC Power Siren"
+        	},
+        	
+			"mobile": {
+				"components":[
+					{
+						"id": "icon",
+						"capabilities": [  ]
+					},
+					{
+						"id": "toggle",
+						"capabilities": ["onoff" ],
+						"options": { "showTitle": true }
+					}
+				]
+			},
+        	"zwave": {
+                "manufacturerId": 265,
+                "productTypeId": 12289,
+                "productId": [260],
+                "requireSecure": false,
+                "learnmode": {
+                    "instruction": {
+                        "en": "Press the (z-wave) button behind the battery door.",
+                        "nl": "Druk op de (z-wave) knop achter het deurtje tbv de batterijen."
+                    }
+                },
+                "associationGroups": [ 1 ]
+        	},
+        	"class": "other",
+        	"capabilities": [ "onoff" ],
+             "images": {
+                "large": "/drivers/ZM1602/assets/images/large.png",
+                "small": "/drivers/ZM1602/assets/images/small.png"
             },
             "settings": [
             	{

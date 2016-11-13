@@ -3,8 +3,8 @@
 const path = require('path');
 const ZwaveDriver = require('homey-zwavedriver');
 
-// Vision Security ZM1601 Battery Operated Siren
-// http://www.pepper1.net/zwavedb/device/344
+// Vision Security ZM1602 DC/AC Power Siren
+// http://www.pepper1.net/zwavedb/device/525
 
 module.exports = new ZwaveDriver(path.basename(__dirname), {
 	capabilities: {
@@ -19,16 +19,6 @@ module.exports = new ZwaveDriver(path.basename(__dirname), {
 			},
 			'command_report': 'SWITCH_BINARY_REPORT',
 			'command_report_parser': report => report['Value'] === 'on/enable'
-		},
-		'measure_battery': {
-			'command_class': 'COMMAND_CLASS_BATTERY',
-			'command_get': 'BATTERY_GET',
-			'command_report': 'BATTERY_REPORT',
-			'command_report_parser': report => {
-				if (report['Battery Level'] === "battery low warning") return 1;
-				
-				return report['Battery Level (Raw)'][0];
-			}
 		}
 	},
 	settings: {
