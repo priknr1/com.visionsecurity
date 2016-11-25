@@ -1,12 +1,14 @@
 {
 	"id": "com.visionsecurity",
 	"name": {
-		"en": "Vision Security"
+		"en": "Vision Security",
+		"nl": "Vision Security"
 	},
-	"version": "1.1.0",
+	"version": "1.1.2",
 	"compatibility": ">=0.9.3",
 	"description": {
-		"en": "Vision Security devices for Homey"
+		"en": "Vision Security devices for Homey",
+		"nl": "Vision Security devices voor Homey"
 	},
 	"category": [ "security" ],
 	"images": {
@@ -24,7 +26,6 @@
         		"en": "Battery Operated Siren",
         		"nl": "Battery Operated Siren"
         	},
-        	
 			"mobile": {
 				"components":[
 					{
@@ -54,9 +55,21 @@
                         "nl": "Druk op de (z-wave) knop achter het deurtje tbv de batterijen."
                     }
                 },
-                "associationGroups": [ 1 ]
+                "associationGroups": [ 1 ],
+                "defaultConfiguration": [
+                    {
+                        "id": "siren_strobe_mode",
+                        "size": 1,
+                        "value": 0
+                    },
+                    {
+                        "id": "alarm_auto_stop",
+                        "size": 1,
+                        "value": 0
+                    }
+                ]
         	},
-        	"class": "other",
+        	"class": "light",
         	"capabilities": [ "onoff", "measure_battery" ],
              "images": {
                 "large": "/drivers/ZM1601/assets/images/large.png",
@@ -142,7 +155,6 @@
         		"en": "DC/AC Power Siren",
         		"nl": "DC/AC Power Siren"
         	},
-        	
 			"mobile": {
 				"components":[
 					{
@@ -167,9 +179,21 @@
                         "nl": "Druk op de (z-wave) knop achter het deurtje tbv de batterijen."
                     }
                 },
-                "associationGroups": [ 1 ]
+                "associationGroups": [ 1 ],
+                "defaultConfiguration": [
+                    {
+                        "id": "siren_strobe_mode",
+                        "size": 1,
+                        "value": 0
+                    },
+                    {
+                        "id": "alarm_auto_stop",
+                        "size": 1,
+                        "value": 0
+                    }
+                ]
         	},
-        	"class": "other",
+        	"class": "light",
         	"capabilities": [ "onoff" ],
              "images": {
                 "large": "/drivers/ZM1602/assets/images/large.png",
