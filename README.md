@@ -3,12 +3,13 @@
 Adds support for Vision Security devices in Homey.
 
 ## Supported Devices
-
 * ZG8108 Garage door sensor
 * ZM1601 Battery Operated Siren
 * ZM1602 DC/AC Power Siren
 
 ## Revision History
+
+2017-05-03 - New owner and Siren class changed to "other"
 
 2016-12-28 - Added Garagedoor sensor ZG8108 
 
