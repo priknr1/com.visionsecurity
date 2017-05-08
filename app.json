@@ -4,7 +4,7 @@
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.2.0",
+   "version":"1.2.1",
    "compatibility":">=0.9.3",
    "description":{  
       "en":"Vision Security devices for Homey",
@@ -26,6 +26,10 @@
          {  
             "name":"Patrick van der Westen",
             "email":"pvdwesten@hotmail.com"
+         },
+         {  
+            "name":"Anne Baretta",
+            "email":"dev@baretta.nu"
          }
       ]
    },
