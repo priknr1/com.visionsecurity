@@ -38,9 +38,9 @@ Homey.manager('flow').on('action.turn_alarm_on', function( callback, args ){
         Homey.log('on flow action.action.turn_alarm_on');
         Homey.log('args', args);
 
-        Homey.manager('drivers').getDriver('ZM1601').capabilities.onoff.set(args.device, true, function (err, data) {
+        Homey.manager('drivers').getDriver('ZM1602').capabilities.onoff.set(args.device, true, function (err, data) {
                 Homey.log('');
-                Homey.log('Homey.manager(drivers).getDriver(ZM1601).capabilities.onoff.set');
+                Homey.log('Homey.manager(drivers).getDriver(ZM1602).capabilities.onoff.set');
                 Homey.log('err', err);
                 Homey.log('data', data);
                 if (err) callback (err, false);
@@ -54,9 +54,9 @@ Homey.manager('flow').on('action.turn_alarm_off', function( callback, args ){
         Homey.log('on flow action.action.turn_alarm_on');
         Homey.log('args', args);
 
-        Homey.manager('drivers').getDriver('ZM1601').capabilities.onoff.set(args.device, false, function (err, data) {
+        Homey.manager('drivers').getDriver('ZM1602').capabilities.onoff.set(args.device, false, function (err, data) {
                 Homey.log('');
-                Homey.log('Homey.manager(drivers).getDriver(ZM1601).capabilities.onoff.set');
+                Homey.log('Homey.manager(drivers).getDriver(ZM1602).capabilities.onoff.set');
                 Homey.log('err', err);
                 Homey.log('data', data);
                 if (err) callback (err, false);
