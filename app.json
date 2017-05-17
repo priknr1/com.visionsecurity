@@ -4,7 +4,7 @@
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.2.1",
+   "version":"1.2.2",
    "compatibility":">=0.9.3",
    "description":{  
       "en":"Vision Security devices for Homey",
@@ -34,6 +34,39 @@
       ]
    },
    "drivers":[  
+       {
+            "id": "ZP3102",
+            "name": {
+                "en": "ZP3102 Motion sensor",
+                "nl": "ZP3102 Bewegingsmelder"
+            },
+            "zwave": {
+                "manufacturerId": 265,
+                "productTypeId": 8194,
+                "productId": [513, 514],
+                "learnmode": {
+                    "image": "/drivers/ZP3102/assets/learnmode.svg",
+                    "instruction": {
+                        "en": "Push the  switch on the back",
+                        "nl": "Druk op de toets op de achterkant"
+                    }
+                },
+                "associationGroups": [
+                    1,2,3
+                ]
+            },
+            "class": "sensor",
+            "capabilities": [
+                "alarm_motion",
+                "alarm_tamper",
+                "measure_temperature",
+                "measure_battery"
+            ],
+            "images": {
+                "large": "/drivers/ZP3102/assets/images/large.jpg",
+                "small": "/drivers/ZP3102/assets/images/small.jpg"
+            }
+        },
       {  
          "id":"ZM1601",
          "name":{  
@@ -332,7 +365,7 @@
                }
             },
             "associationGroups":[  
-               3
+               1,2,3
             ]
          },
          "class":"sensor",
