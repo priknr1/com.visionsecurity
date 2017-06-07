@@ -4,7 +4,7 @@
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.2.2",
+   "version":"1.2.3",
    "compatibility":">=0.9.3",
    "description":{  
       "en":"Vision Security devices for Homey",
@@ -18,8 +18,8 @@
       "small":"/assets/images/small.jpg"
    },
    "author":{  
-      "name":"Serge Regoor",
-      "email":"serge@regoor.nl"
+      "name":"Patrick van der Westen",
+      "email":"pvdwesten@hotmail.com"
    },
    "contributors":{  
       "developers":[  
@@ -28,12 +28,51 @@
             "email":"pvdwesten@hotmail.com"
          },
          {  
+            "name":"Serge Regoor",
+            "email":"serge@regoor.nl"
+         },
+         {  
             "name":"Anne Baretta",
             "email":"dev@baretta.nu"
          }
       ]
    },
    "drivers":[  
+       {
+            "id": "ZP3111",
+            "name": {
+                "en": "ZP3111 4in1",
+                "nl": "ZP3111 4in1"
+            },
+            "zwave": {
+                "manufacturerId": 265,
+                "productTypeId": 8225,
+                "productId": 8449,
+                "learnmode": {
+                    "image": "/drivers/ZP3111/assets/learnmode.svg",
+                    "instruction": {
+                        "en": "Push the  switch on the back",
+                        "nl": "Druk op de toets op de achterkant"
+                    }
+                },
+                "associationGroups": [
+                    1,2,3
+                ]
+            },
+            "class": "sensor",
+            "capabilities": [
+                "alarm_motion",
+                "alarm_tamper",
+                "measure_temperature",
+                "measure_humidity",
+                "measure_luminance",
+                "measure_battery"
+            ],
+            "images": {
+                "large": "/drivers/ZP3111/assets/images/large.jpg",
+                "small": "/drivers/ZP3111/assets/images/small.jpg"
+            }
+        },
        {
             "id": "ZP3102",
             "name": {
