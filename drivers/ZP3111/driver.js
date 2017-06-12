@@ -118,5 +118,39 @@ module.exports = new ZwaveDriver( path.basename(__dirname), {
 				return report['Battery Level (Raw)'][0];
 			}
 		}	
+	},
+	settings: {
+		temperature_unit: {
+			index: 1,
+			size: 1,
+		},
+		temperature_delta: {
+			index: 2,
+			size: 1,
+		},
+		humidity_delta: {
+			index: 3,
+			size: 1,
+		},
+		light_delta: {
+			index: 4,
+			size: 1,
+		},
+		motion_timeout: {
+			index: 5,
+			size: 1,
+			signed: false,
+		},
+		motion_sensitivity: {
+			index: 6,
+			size: 1,
+		},
+		led_mode: {
+			index: 7,
+			size: 1,
+            "parser": function (input) {
+                return new Buffer([parseInt(input)]);
+            }
+		}
 	}
 })

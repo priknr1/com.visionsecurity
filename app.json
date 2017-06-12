@@ -71,7 +71,154 @@
             "images": {
                 "large": "/drivers/ZP3111/assets/images/large.jpg",
                 "small": "/drivers/ZP3111/assets/images/small.jpg"
-            }
+            },
+			"settings": [
+				{
+					"id": "temperature_unit",
+					"type": "checkbox",
+					"label": {
+						"en": "Temperature unit Kelvin",
+						"nl": "Temperatuureenheid in Kelvin"
+					},
+					"hint": {
+						"en": "Default is Celcius, Check on is Kelvin ",
+						"nl": "Standaard is Celcius, Check aan is Kelvin"
+					},
+					"value": false
+				},
+				{
+					"id": "temperature_delta",
+					"type": "number",
+					"label": {
+						"en": "Defines the temperature delta for report.",
+						"nl": "Definieert het temperatuurverschil om te melden."
+					},
+					"value": 10,
+					"attr": {
+						"min": 1,
+						"max": 50
+					},
+					"hint": {
+						"en": "Value is multiplied by 0.1 .   So 10 means 1°С/°F",
+						"nl": "Waarde wordt vermenigvuldigd met 0.1 .   Dus 10 betekent 1°С/°F "
+					}
+				},
+				{
+					"id": "humidity_delta",
+					"type": "number",
+					"label": {
+						"en": "The humidity delta for report.",
+						"nl": "Het vochtigheid verschil om te melden."
+					},
+					"value": 10,
+					"attr": {
+						"min": 1,
+						"max": 50
+					},
+					"hint": {
+						"en": "Value is %",
+						"nl": "Waarde is % "
+					}
+				},
+				{
+					"id": "light_delta",
+					"type": "number",
+					"label": {
+						"en": "The light delta for report.",
+						"nl": "Het vochtigheid verschil om te melden."
+					},
+					"value": 10,
+					"attr": {
+						"min": 0,
+						"max": 50
+					},
+					"hint": {
+						"en": "0 = off  Value is %",
+						"nl": "0 = uit  Waarde is % "
+					}
+				},
+				{
+					"id": "motion_timeout",
+					"type": "number",
+					"label": {
+						"en": "Motion time-out in minutes",
+						"nl": "Beweging time-out in minuten."
+					},
+					"value": 3,
+					"attr": {
+						"min": 1,
+						"max": 255
+					},
+					"hint": {
+						"en": "Time after which te sensor can be re-triggered",
+						"nl": "Tijd waarna de sensor opnieuw geactiveerd wordt"
+					}
+				},
+				{
+					"id": "motion_sensitivity",
+					"type": "number",
+					"label": {
+						"en": "Motion Sensitivity",
+						"nl": "Beweging gevoeligheid."
+					},
+					"value": 4,
+					"attr": {
+						"min": 1,
+						"max": 7
+					},
+					"hint": {
+						"en": "From 1 to 7",
+						"nl": "Van 1 tot 7"
+					}
+				},
+				{	
+					"id": "led_mode",
+					"type": "dropdown",
+					"label": {
+						"en": "Led Mode",
+						"nl": "Led Modus"
+					},
+					"value": "3",
+					"hint": {
+						"en": "The parameter determines the behaviour of the led"
+					},
+					"values": [
+					{
+						"id": "1",
+						"label": {
+							"en": "LED turned off",
+							"nl": "LED uit"
+						}
+					}, {
+						"id": "2",
+						"label": {
+							"en": "Temp = Breathing mode / PIR = quick flash",
+							"nl": "Temp = gloei modus / PIR = knipper"
+						}
+					}, {
+						"id": "3",
+						"label": {
+							"en": "Quick flash",
+							"en": "knipperen"
+						}
+					}]
+				},
+				{
+					"label": {
+						"en": "Motion Sensitivity",
+						"nl": "Beweging gevoeligheid."
+					},
+					"value": 4,
+					"attr": {
+						"min": 1,
+						"max": 7
+					},
+					"hint": {
+						"en": "From 1 to 7",
+						"nl": "Van 1 tot 7"
+					}
+				}
+			]
         },
        {
             "id": "ZP3102",

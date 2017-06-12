@@ -3,9 +3,7 @@
 const path			= require('path');
 const ZwaveDriver	= require('homey-zwavedriver');
 
-//https://www.zipato.com/product/multisensor-duo
-// http://www.pepper1.net/zwavedb/device/197
-// http://www.pepper1.net/zwavedb/device/142
+//http://products.z-wavealliance.org/products/703
 
 module.exports = new ZwaveDriver( path.basename(__dirname), {
 	debug: false,
