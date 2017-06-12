@@ -18,11 +18,19 @@ If you like the work, please help me buy a stroller for my future kid :D
 * ZM1602 DC/AC Power Siren
 
 ## Revision History
-2017-06-07 / 1.2.3 - Added 4in1 sensor ZP3111
 
-2017-05-17 / 1.2.2 - Added PIR sensor ZP3102 
+* V1.2.4
+Added 4in1 sensor ZP3111 settings
 
-2017-05-03 / 1.2.1 - New owner and Siren class changed to "other"
+* V1.2.3
+Added 4in1 sensor ZP3111
 
-2016-12-28 / 1.1.0 - Added Garagedoor sensor ZG8108 
+* V1.2.2
+Added PIR sensor ZP3102 
+
+* V1.2.1
+New owner and Siren class changed to "other"
+
+* V1.1.0
+Added Garagedoor sensor ZG8108 
 

@@ -4,7 +4,7 @@
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.2.3",
+   "version":"1.2.4",
    "compatibility":">=0.9.3",
    "description":{  
       "en":"Vision Security devices for Homey",
@@ -51,8 +51,8 @@
                 "learnmode": {
                     "image": "/drivers/ZP3111/assets/learnmode.svg",
                     "instruction": {
-                        "en": "Push the  switch on the back",
-                        "nl": "Druk op de toets op de achterkant"
+                        "en": "Push the  switch on the bottom",
+                        "nl": "Druk op de toets op de onderkant"
                     }
                 },
                 "associationGroups": [
