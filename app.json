@@ -202,21 +202,6 @@
 							"en": "knipperen"
 						}
 					}]
-				},
-				{
-					"label": {
-						"en": "Motion Sensitivity",
-						"nl": "Beweging gevoeligheid."
-					},
-					"value": 4,
-					"attr": {
-						"min": 1,
-						"max": 7
-					},
-					"hint": {
-						"en": "From 1 to 7",
-						"nl": "Van 1 tot 7"
-					}
 				}
 			]
         },
