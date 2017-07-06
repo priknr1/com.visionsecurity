@@ -19,7 +19,7 @@ If you like the work, please help me buy a stroller for my future kid :D
 
 ## Revision History
 
-* V1.2.4
+* V1.2.5
 Added 4in1 sensor ZP3111 settings
 
 * V1.2.3

@@ -4,7 +4,7 @@
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.2.4",
+   "version":"1.2.5",
    "compatibility":">=0.9.3",
    "description":{  
       "en":"Vision Security devices for Homey",
@@ -185,21 +185,26 @@
 					"values": [
 					{
 						"id": "1",
-						"label": {
+						"label": 
+						{
 							"en": "LED turned off (Both Temp./PIR Trigger)",
 							"nl": "LED uit"
 						}
-					}, {
+					}, 
+					{
 						"id": "2",
-						"label": {
+						"label": 
+						{
 							"en": "Temp = Breathing mode / PIR = quick flash",
 							"nl": "Temp = gloei modus / PIR = knipper"
 						}
-					}, {
+					}, 
+					{
 						"id": "3",
-						"label": {
+						"label": 
+						{
 							"en": "LED Quick flash (Temp./PIR Trigger)",
-							"en": "LED knipperen"
+							"nl": "LED knipperen"
 						}
 					}]
 				}

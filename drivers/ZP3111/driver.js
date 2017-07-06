@@ -148,7 +148,7 @@ module.exports = new ZwaveDriver( path.basename(__dirname), {
 		led_mode: {
 			index: 7,
 			size: 1,
-            "parser": function (input) {
+            parser: function (input) {
                 return new Buffer([parseInt(input)]);
             }
 		}
