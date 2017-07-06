@@ -51,7 +51,7 @@
                 "learnmode": {
                     "image": "/drivers/ZP3111/assets/learnmode.svg",
                     "instruction": {
-                        "en": "Push the  switch on the bottom",
+                        "en": "Push the switch on the bottom",
                         "nl": "Druk op de toets op de onderkant"
                     }
                 },
@@ -99,8 +99,8 @@
 						"max": 50
 					},
 					"hint": {
-						"en": "Value is multiplied by 0.1 .   So 10 means 1°С/°F",
-						"nl": "Waarde wordt vermenigvuldigd met 0.1 .   Dus 10 betekent 1°С/°F "
+						"en": "Value is multiplied by 0.1. So 10 means 1°С/°F",
+						"nl": "Waarde wordt vermenigvuldigd met 0.1. Dus 10 betekent 1°С/°F "
 					}
 				},
 				{
@@ -141,7 +141,7 @@
 					"id": "motion_timeout",
 					"type": "number",
 					"label": {
-						"en": "Motion time-out in minutes",
+						"en": "Motion time-out in minutes. Change value from 1 to 255 minutes to setup the re-trigger time when there is no movement detected in the period of time. Default is 3 minutes.",
 						"nl": "Beweging time-out in minuten."
 					},
 					"value": 3,
@@ -158,7 +158,7 @@
 					"id": "motion_sensitivity",
 					"type": "number",
 					"label": {
-						"en": "Motion Sensitivity",
+						"en": "Motion Sensitivity. 7 levels sensitivity, 1 = most sensitive, 7 = most insensitive, default values= 4",
 						"nl": "Beweging gevoeligheid."
 					},
 					"value": 4,
@@ -186,7 +186,7 @@
 					{
 						"id": "1",
 						"label": {
-							"en": "LED turned off",
+							"en": "LED turned off (Both Temp./PIR Trigger)",
 							"nl": "LED uit"
 						}
 					}, {
@@ -198,8 +198,8 @@
 					}, {
 						"id": "3",
 						"label": {
-							"en": "Quick flash",
-							"en": "knipperen"
+							"en": "LED Quick flash (Temp./PIR Trigger)",
+							"en": "LED knipperen"
 						}
 					}]
 				}
