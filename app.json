@@ -4,7 +4,7 @@
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.2.5",
+   "version":"1.2.6",
    "compatibility":">=0.9.3",
    "description":{  
       "en":"Vision Security devices for Homey",
@@ -38,7 +38,57 @@
       ]
    },
    "drivers":[  
-       {
+		{
+		"id": "ZD2102",
+		"name": {
+			"en": "Door/Window Sensor",
+			"nl": "Deur/Raam Sensor"
+		},
+		"zwave": {
+			"manufacturerId": 265,
+			"productTypeId": 8193,
+			"productId": [
+			258,
+			261
+			],
+			"learnmode": {
+			"image": "/drivers/ZD2102/assets/learnmode.svg",
+			"instruction": {
+				"en": "Press the button on your  Door/Window Sensor",
+				"nl": "Druk op de knop op de Deur/Raam Sensor"
+			}
+			},
+			"associationGroups": [
+			1,2,3
+			]
+		},
+		"class": "sensor",
+		"capabilities": [
+			"alarm_contact",
+			"alarm_tamper",
+			"measure_battery"
+		],
+		"images": {
+			"large": "/drivers/ZD2102/assets/images/large.png",
+			"small": "/drivers/ZD2102/assets/images/small.png"
+		},
+		"settings": [
+			{
+			"id": "Enable_External_Switch",
+            "type":"checkbox",
+			"label": {
+				"en": "Turn on the external input",
+				"nl": "Zet de externe ingang aan"
+			},
+			"hint": {
+				"en": "Turn on the external input",
+				"nl": "Zet de externe ingang aan"
+			},
+			"value": false
+			}
+		]
+		},
+        {
             "id": "ZP3111",
             "name": {
                 "en": "ZP3111 4in1",
