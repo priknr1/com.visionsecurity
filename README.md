@@ -20,6 +20,9 @@ If you like the work, please help me buy a stroller for my future kid :D
 
 ## Revision History
 
+* V1.2.7
+Added Door/window sensor ZD2102 new ID 262
+
 * V1.2.6
 Added Door/window sensor ZD2102
 
