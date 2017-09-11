@@ -20,6 +20,9 @@ If you like the work, please help me buy a stroller for my future kid :D
 
 ## Revision History
 
+* V1.2.8
+ZP3111 bugfix in setting LedMOde (no configuration set Buffer needed)
+
 * V1.2.7
 Added Door/window sensor ZD2102 new ID 262
 
