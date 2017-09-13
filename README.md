@@ -20,6 +20,9 @@ If you like the work, please help me buy a stroller for my future kid :D
 
 ## Revision History
 
+* V1.3.0
+Fixed all errors in ZP3111 driver
+
 * V1.2.9
 an extra } magically appeared in the driver for ZP3111
 

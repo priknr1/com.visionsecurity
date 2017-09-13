@@ -7,6 +7,7 @@ const ZwaveDriver = require('homey-zwavedriver');
 // http://www.pepper1.net/zwavedb/device/988
 
 module.exports = new ZwaveDriver(path.basename(__dirname), {
+	debug: false,
 	capabilities: {
 		alarm_contact: [
 			{
