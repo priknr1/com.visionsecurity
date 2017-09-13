@@ -20,6 +20,9 @@ If you like the work, please help me buy a stroller for my future kid :D
 
 ## Revision History
 
+* V1.2.9
+an extra } magically appeared in the driver for ZP3111
+
 * V1.2.8
 ZP3111 bugfix in setting LedMOde (no configuration set Buffer needed)
 

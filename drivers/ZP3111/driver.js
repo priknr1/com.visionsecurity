@@ -6,26 +6,34 @@ const ZwaveDriver	= require('homey-zwavedriver');
 //http://products.z-wavealliance.org/products/1572
 
 
-module.exports = new ZwaveDriver( path.basename(__dirname), {
+module.exports = new ZwaveDriver( path.basename(__dirname), 
+{
 	debug: false,
-	capabilities: {
-		'alarm_motion': {
+	capabilities: 
+	{
+		'alarm_motion': 
+		{
 			'command_class'				: 'COMMAND_CLASS_NOTIFICATION',
 			//'command_get'				: 'NOTIFICATION_GET',
-			'command_get_parser'		: function(){
-				return {
+			'command_get_parser'		: function()
+			{
+				return 
+				{
 					"V1 Alarm Type" : 0,
 					"Notification Type" : "Access Control",
 					"Event" : 0,
 				}
 			},
 			'command_report'			: 'NOTIFICATION_REPORT',
-			'command_report_parser'		: function( report ){
-				if (report['Event (Parsed)'] === 'Motion Detection, Unknown Location') {
+			'command_report_parser'		: function( report )
+			{
+				if (report['Event (Parsed)'] === 'Motion Detection, Unknown Location') 
+				{
 					return true;
 				}
 				
-				if (report['Event (Parsed)'] === 'Event inactive') {
+				if (report['Event (Parsed)'] === 'Event inactive') 
+				{
 					return false;
 				}
 				
@@ -33,35 +41,44 @@ module.exports = new ZwaveDriver( path.basename(__dirname), {
 			}
 		},
 
-		'alarm_tamper': {
+		'alarm_tamper': 
+		{
 			'command_class'				: 'COMMAND_CLASS_NOTIFICATION',
 			//'command_get'				: 'NOTIFICATION_GET',
-			'command_get_parser'		: function(){
-				return {
+			'command_get_parser'		: function()
+			{
+				return 
+				{
 					"V1 Alarm Type" : 0,
 					"Notification Type" : "Access Control",
 					"Event" : 0,
 				}
 			},
 			'command_report'			: 'NOTIFICATION_REPORT',
-			'command_report_parser'		: function( report ){
+			'command_report_parser'		: function( report )
+			{
 				return report['Event (Parsed)'] === 'Tampering, Product covering removed';
 			}
 		},
 
-		'measure_temperature': {
+		'measure_temperature': 
+		{
 			'command_class'				: 'COMMAND_CLASS_SENSOR_MULTILEVEL',
 			'command_get'				: 'SENSOR_MULTILEVEL_GET',
-			'command_get_parser'		: function(){
-				return {
+			'command_get_parser'		: function()
+			{
+				return 
+				{
 					'Sensor Type': 'Temperature (version 1)',
-					'Properties1': {
+					'Properties1': 
+					{
 						'Scale': 0
 					}
 				}
 			},
 			'command_report'			: 'SENSOR_MULTILEVEL_REPORT',
-			'command_report_parser'		: function( report ){
+			'command_report_parser'		: function( report )
+			{
 				if( report['Sensor Type'] !== 'Temperature (version 1)' )
 					return null;
 
@@ -69,19 +86,24 @@ module.exports = new ZwaveDriver( path.basename(__dirname), {
 			}
 		},
 
-		'measure_luminance': {
+		'measure_luminance': 
+		{
 			'command_class'				: 'COMMAND_CLASS_SENSOR_MULTILEVEL',
 			'command_get'				: 'SENSOR_MULTILEVEL_GET',
-			'command_get_parser'		: function(){
-				return {
+			'command_get_parser'		: function()
+			{
+				return 
+				{
 					'Sensor Type': 'Luminance (version 1)',
-					'Properties1': {
+					'Properties1': 
+					{
 						'Scale': 0
 					}
 				}
 			},
 			'command_report'			: 'SENSOR_MULTILEVEL_REPORT',
-			'command_report_parser'		: function( report ){
+			'command_report_parser'		: function( report )
+			{
 				if( report['Sensor Type'] !== 'Luminance (version 1)' )
 					return null;
 
@@ -89,19 +111,24 @@ module.exports = new ZwaveDriver( path.basename(__dirname), {
 			}
 		},
 
-		'measure_humidity': {
+		'measure_humidity': 
+		{
 			'command_class'				: 'COMMAND_CLASS_SENSOR_MULTILEVEL',
 			'command_get'				: 'SENSOR_MULTILEVEL_GET',
-			'command_get_parser'		: function(){
-				return {
+			'command_get_parser'		: function()
+			{
+				return 
+				{
 					'Sensor Type': 'Relative humidity (version 2)',
-					'Properties1': {
+					'Properties1': 
+					{
 						'Scale': 0
 					}
 				}
 			},
 			'command_report'			: 'SENSOR_MULTILEVEL_REPORT',
-			'command_report_parser'		: function( report ){
+			'command_report_parser'		: function( report )
+			{
 				if( report['Sensor Type'] !== 'Relative humidity (version 2)' )
 					return null;
 
@@ -109,46 +136,55 @@ module.exports = new ZwaveDriver( path.basename(__dirname), {
 			}
 		}, 
 
-		'measure_battery': {
+		'measure_battery': 
+		{
 			'command_class'				: 'COMMAND_CLASS_BATTERY',
 			'command_get'				: 'BATTERY_GET',
 			'command_report'			: 'BATTERY_REPORT',
-			'command_report_parser'		: function( report ) {
+			'command_report_parser'		: function( report ) 
+			{
 				if( report['Battery Level'] === "battery low warning" ) return 1;
 				return report['Battery Level (Raw)'][0];
 			}
 		}	
 	},
-	settings: {
-		temperature_unit: {
+	settings: 
+	{
+		temperature_unit: 
+		{
 			index: 1,
 			size: 1,
 		},
-		temperature_delta: {
+		temperature_delta: 
+		{
 			index: 2,
 			size: 1,
 		},
-		humidity_delta: {
+		humidity_delta: 
+		{
 			index: 3,
 			size: 1,
 		},
-		light_delta: {
+		light_delta: 
+		{
 			index: 4,
 			size: 1,
 		},
-		motion_timeout: {
+		motion_timeout: 
+		{
 			index: 5,
 			size: 1,
 			signed: false,
 		},
-		motion_sensitivity: {
+		motion_sensitivity: 
+		{
 			index: 6,
 			size: 1,
 		},
-		led_mode: {
+		led_mode: 
+		{
 			index: 7,
 			size: 1,
-            }
-		}
+        }
 	}
 })
