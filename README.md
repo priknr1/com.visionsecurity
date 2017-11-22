@@ -22,8 +22,8 @@ If you like the work, please help me buy a stroller for my future kid :D
 
 ** V1.4.0
 * 2 versions of ZP3102 available now  (ald and new had different command classes)
-Added some product ID's for ZP3102
-Added some product ID's for ZD2102
+* Added some product ID's for ZP3102
+* Added some product ID's for ZD2102
 
 ** V1.3.0
 * Fixed all errors in ZP3111 driver
