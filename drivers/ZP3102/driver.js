@@ -10,12 +10,11 @@ module.exports = new ZwaveDriver( path.basename(__dirname), {
 	capabilities: {
 		'alarm_motion': [
 		{
-			'optional': true,
+			'optional'					: true,
 			'command_class'				: 'COMMAND_CLASS_NOTIFICATION',
 			//'command_get'				: 'NOTIFICATION_GET',
 			'command_get_parser'		: function(){
-				return 
-					{
+				return {
 						"V1 Alarm Type" : 0,
 						"Notification Type" : "Access Control",
 						"Event" : 0,
