@@ -4,7 +4,7 @@
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.4.0",
+   "version":"1.4.1",
    "compatibility":">=0.9.3",
    "description":{  
       "en":"Vision Security devices for Homey",
