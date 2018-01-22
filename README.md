@@ -19,6 +19,9 @@ If you like the work, please help me buy a stroller for my future kid :D
 * ZM1602 DC/AC Power Siren
 
 ## Revision History
+** V1.4.2
+* ZM1602 Added Product ID and Product Type ID
+
 ** V1.4.1
 * ZD2102 Tamper alarm set to optional
 

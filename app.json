@@ -4,7 +4,7 @@
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.4.1",
+   "version":"1.4.2",
    "compatibility":">=0.9.3",
    "description":{  
       "en":"Vision Security devices for Homey",
@@ -459,10 +459,8 @@
          },
          "zwave":{  
             "manufacturerId":265,
-            "productTypeId":12289,
-            "productId":[  
-               260
-            ],
+            "productTypeId":[12289,8201],
+            "productId":[260,2312],
             "requireSecure":false,
             "learnmode":{  
                "instruction":{  
@@ -577,9 +575,7 @@
          "zwave":{  
             "manufacturerId":265,
             "productTypeId":8202,
-            "productId":[  
-               2562
-            ],
+            "productId":2562,
             "learnmode":{  
                "image":"/drivers/ZG8101/assets/learnmode.svg",
                "instruction":{  
