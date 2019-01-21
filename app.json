@@ -342,12 +342,12 @@
             ],
             "defaultConfiguration":[  
                {  
-                  "id":"siren_strobe_mode",
+                  "id":0,
                   "size":1,
                   "value":0
                },
                {  
-                  "id":"alarm_auto_stop",
+                  "id":0,
                   "size":1,
                   "value":0
                }
@@ -473,12 +473,12 @@
             ],
             "defaultConfiguration":[  
                {  
-                  "id":"siren_strobe_mode",
+                  "id":0,
                   "size":1,
                   "value":0
                },
                {  
-                  "id":"alarm_auto_stop",
+                  "id":1,
                   "size":1,
                   "value":0
                }
