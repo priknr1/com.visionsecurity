@@ -12,6 +12,7 @@ If you like the work, please help me buy a stroller for my future kid :D
 
 ## Supported Devices
 * ZD2102 Door/window sensor
+* ZD2102Gen5 Door/window sensor
 * ZP3111 4in1 sensor
 * ZP3102 PIR motion sensor
 * ZG8108 Garage door sensor
@@ -19,6 +20,10 @@ If you like the work, please help me buy a stroller for my future kid :D
 * ZM1602 DC/AC Power Siren
 
 ## Revision History
+** V1.4.5
+* ZM2102Gen5 Added
+
+
 ** V1.4.2
 * ZM1602 Added Product ID and Product Type ID
 

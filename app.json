@@ -4,7 +4,7 @@
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.4.3",
+   "version":"1.4.4",
    "compatibility":">=0.9.3",
    "description":{  
       "en":"Vision Security devices for Homey",
@@ -47,7 +47,7 @@
 		"zwave": {
 			"manufacturerId": 265,
 			"productTypeId": 8193,
-			"productId": [257,258,259,260,261,262],
+			"productId": [257,258,259,260,261],
 			"learnmode": {
 			"image": "/drivers/ZD2102/assets/learnmode.svg",
 			"instruction": {
@@ -68,6 +68,53 @@
 		"images": {
 			"large": "/drivers/ZD2102/assets/images/large.png",
 			"small": "/drivers/ZD2102/assets/images/small.png"
+		},
+		"settings": [
+			{
+			"id": "Enable_External_Switch",
+            "type":"checkbox",
+			"label": {
+				"en": "Turn on the external input",
+				"nl": "Zet de externe ingang aan"
+			},
+			"hint": {
+				"en": "Turn on the external input",
+				"nl": "Zet de externe ingang aan"
+			},
+			"value": false
+			}
+		]
+		},
+        {
+		"id": "ZD2102Gen5",
+		"name": {
+			"en": "Door/Window Sensor",
+			"nl": "Deur/Raam Sensor"
+		},
+		"zwave": {
+			"manufacturerId": 265,
+			"productTypeId": 8193,
+			"productId": 262,
+			"learnmode": {
+			"image": "/drivers/ZD2102Gen5/assets/learnmode.svg",
+			"instruction": {
+				"en": "Press the button on your  Door/Window Sensor",
+				"nl": "Druk op de knop op de Deur/Raam Sensor"
+			}
+			},
+			"associationGroups": [
+			1,2,3
+			]
+		},
+		"class": "sensor",
+		"capabilities": [
+			"alarm_contact",
+			"alarm_tamper",
+			"measure_battery"
+		],
+		"images": {
+			"large": "/drivers/ZD2102Gen5/assets/images/large.png",
+			"small": "/drivers/ZD2102Gen5/assets/images/small.png"
 		},
 		"settings": [
 			{
