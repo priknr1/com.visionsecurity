@@ -19,6 +19,10 @@ If you like the work, please help me buy a stroller for my future kid :D
 * ZM1602 DC/AC Power Siren
 
 ## Revision History
+
+** V1.4.6
+* ZM1602 addod to flow actions
+
 ** V1.4.4
 * ZM8101 Added Product ID and Product Type ID
 
