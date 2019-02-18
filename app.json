@@ -4,7 +4,7 @@
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.4.3",
+   "version":"1.4.4",
    "compatibility":">=0.9.3",
    "description":{  
       "en":"Vision Security devices for Homey",
@@ -574,8 +574,8 @@
          },
          "zwave":{  
             "manufacturerId":265,
-            "productTypeId":8202,
-            "productId":2562,
+            "productTypeId":[8202,8195],
+            "productId":[2562,770],
             "learnmode":{  
                "image":"/drivers/ZG8101/assets/learnmode.svg",
                "instruction":{  

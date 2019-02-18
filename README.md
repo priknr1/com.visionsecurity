@@ -19,6 +19,9 @@ If you like the work, please help me buy a stroller for my future kid :D
 * ZM1602 DC/AC Power Siren
 
 ## Revision History
+** V1.4.4
+* ZM8101 Added Product ID and Product Type ID
+
 ** V1.4.2
 * ZM1602 Added Product ID and Product Type ID
 
@@ -30,33 +33,4 @@ If you like the work, please help me buy a stroller for my future kid :D
 * Added some product ID's for ZP3102
 * Added some product ID's for ZD2102
 
-** V1.3.0
-* Fixed all errors in ZP3111 driver
-
-* V1.2.9
-an extra } magically appeared in the driver for ZP3111
-
-* V1.2.8
-ZP3111 bugfix in setting LedMOde (no configuration set Buffer needed)
-
-* V1.2.7
-Added Door/window sensor ZD2102 new ID 262
-
-* V1.2.6
-Added Door/window sensor ZD2102
-
-* V1.2.5
-Added 4in1 sensor ZP3111 settings
-
-* V1.2.3
-Added 4in1 sensor ZP3111
-
-* V1.2.2
-Added PIR sensor ZP3102 
-
-* V1.2.1
-New owner and Siren class changed to "other"
-
-* V1.1.0
-Added Garagedoor sensor ZG8108 
 
