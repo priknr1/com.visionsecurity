@@ -1,43 +1,43 @@
 {  
    "id":"com.visionsecurity",
-   "name":{  
+   "name":{
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.4.4",
+   "version":"1.4.6",
    "compatibility":">=0.9.3",
-   "description":{  
+   "description":{
       "en":"Vision Security devices for Homey",
       "nl":"Vision Security devices voor Homey"
    },
-   "category":[  
+   "category":[
       "security"
    ],
-   "images":{  
+   "images":{
       "large":"/assets/images/large.jpg",
       "small":"/assets/images/small.jpg"
    },
-   "author":{  
+   "author":{
       "name":"Patrick van der Westen",
       "email":"pvdwesten@hotmail.com"
    },
-   "contributors":{  
-      "developers":[  
-         {  
+   "contributors":{
+      "developers":[
+         {
             "name":"Patrick van der Westen",
             "email":"pvdwesten@hotmail.com"
          },
-         {  
+         {
             "name":"Serge Regoor",
             "email":"serge@regoor.nl"
          },
-         {  
+         {
             "name":"Anne Baretta",
             "email":"dev@baretta.nu"
          }
       ]
    },
-   "drivers":[  
+   "drivers":[
 		{
 		"id": "ZD2102",
 		"name": {
@@ -265,7 +265,7 @@
 						"nl": "Van 1 tot 7"
 					}
 				},
-				{	
+				{
 					"id": "led_mode",
 					"type": "dropdown",
 					"label": {
@@ -279,23 +279,23 @@
 					"values": [
 					{
 						"id": "1",
-						"label": 
+						"label":
 						{
 							"en": "LED turned off (Both Temp./PIR Trigger)",
 							"nl": "LED uit"
 						}
-					}, 
+					},
 					{
 						"id": "2",
-						"label": 
+						"label":
 						{
 							"en": "Temp = Breathing mode / PIR = quick flash",
 							"nl": "Temp = gloei modus / PIR = knipper"
 						}
-					}, 
+					},
 					{
 						"id": "3",
-						"label": 
+						"label":
 						{
 							"en": "LED Quick flash (Temp./PIR Trigger)",
 							"nl": "LED knipperen"
@@ -337,63 +337,63 @@
                 "small": "/drivers/ZP3102/assets/images/small.jpg"
             }
         },
-      {  
+      {
          "id":"ZM1601",
-         "name":{  
+         "name":{
             "en":"Battery Operated Siren",
             "nl":"Battery Operated Siren"
          },
-         "mobile":{  
-            "components":[  
-               {  
+         "mobile":{
+            "components":[
+               {
                   "id":"icon",
-                  "capabilities":[ "onoff" ] 
+                  "capabilities":[ "onoff" ]
                },
-               {  
+               {
                   "id":"toggle",
-                  "capabilities":[  
+                  "capabilities":[
                      "onoff"
                   ],
-                  "options":{  
+                  "options":{
                      "showTitle":true
                   }
                },
-               {  
+               {
                   "id":"battery",
-                  "capabilities":[  
+                  "capabilities":[
                      "measure_battery"
                   ],
-                  "options":{  
+                  "options":{
                      "showTitle":true
                   }
                }
             ]
          },
-         "zwave":{  
+         "zwave":{
             "manufacturerId":265,
             "productTypeId":8197,
-            "productId":[  
+            "productId":[
                1283,
                1285,
                1288
             ],
             "requireSecure":false,
-            "learnmode":{  
-               "instruction":{  
+            "learnmode":{
+               "instruction":{
                   "en":"Press the (z-wave) button behind the battery door.",
                   "nl":"Druk op de (z-wave) knop achter het deurtje tbv de batterijen."
                }
             },
-            "associationGroups":[  
+            "associationGroups":[
                1
             ],
-            "defaultConfiguration":[  
-               {  
+            "defaultConfiguration":[
+               {
                   "id":0,
                   "size":1,
                   "value":0
                },
-               {  
+               {
                   "id":1,
                   "size":1,
                   "value":0
@@ -401,80 +401,80 @@
             ]
          },
          "class":"other",
-         "capabilities":[  
+         "capabilities":[
             "onoff",
             "measure_battery"
          ],
-         "images":{  
+         "images":{
             "large":"/drivers/ZM1601/assets/images/large.png",
             "small":"/drivers/ZM1601/assets/images/small.png"
          },
-         "settings":[  
-            {  
+         "settings":[
+            {
                "id":"siren_strobe_mode",
                "type":"dropdown",
-               "label":{  
+               "label":{
                   "en":"Siren strobe mode",
                   "nl":"Sirene en stroboscoop"
                },
                "value":"0",
-               "values":[  
-                  {  
+               "values":[
+                  {
                      "id":"0",
-                     "label":{  
+                     "label":{
                         "en":"Siren and strobe",
                         "nl":"Sirene en stroboscoop"
                      }
                   },
-                  {  
+                  {
                      "id":"1",
-                     "label":{  
+                     "label":{
                         "en":"Siren only",
                         "nl":"Alleen sirene"
                      }
                   },
-                  {  
+                  {
                      "id":"2",
-                     "label":{  
+                     "label":{
                         "en":"Strobe only",
                         "nl":"Alleen stroboscoop"
                      }
                   }
                ]
             },
-            {  
+            {
                "id":"alarm_auto_stop",
                "type":"dropdown",
-               "label":{  
+               "label":{
                   "en":"Alarm auto stop",
                   "nl":"Automatische alarm stop"
                },
                "value":"0",
-               "values":[  
-                  {  
+               "values":[
+                  {
                      "id":"0",
-                     "label":{  
+                     "label":{
                         "en":"30 seconds",
                         "nl":"30 seconden"
                      }
                   },
-                  {  
+                  {
                      "id":"1",
-                     "label":{  
+                     "label":{
                         "en":"60 seconds",
                         "nl":"60 seconden"
                      }
                   },
-                  {  
+                  {
                      "id":"2",
-                     "label":{  
+                     "label":{
                         "en":"120 seconds",
                         "nl":"120 seconden"
                      }
                   },
-                  {  
+                  {
                      "id":"3",
-                     "label":{  
+                     "label":{
                         "en":"No automatic stop",
                         "nl":"Geen automatische stop"
                      }
@@ -483,48 +483,48 @@
             }
          ]
       },
-      {  
+      {
          "id":"ZM1602",
-         "name":{  
+         "name":{
             "en":"DC/AC Power Siren",
             "nl":"DC/AC Power Siren"
          },
-         "mobile":{  
-            "components":[  
-               {  
+         "mobile":{
+            "components":[
+               {
                   "id":"icon",
                   "capabilities":[ "onoff" ]
                },
-               {  
+               {
                   "id":"toggle",
                   "capabilities":[ "onoff" ],
-                  "options":{  
+                  "options":{
                      "showTitle":true
                   }
                }
             ]
          },
-         "zwave":{  
+         "zwave":{
             "manufacturerId":265,
             "productTypeId":[12289,8201],
             "productId":[260,2312],
             "requireSecure":false,
-            "learnmode":{  
-               "instruction":{  
+            "learnmode":{
+               "instruction":{
                   "en":"Press the (z-wave) button behind the battery door.",
                   "nl":"Druk op de (z-wave) knop achter het deurtje tbv de batterijen."
                }
             },
-            "associationGroups":[  
+            "associationGroups":[
                1
             ],
-            "defaultConfiguration":[  
-               {  
+            "defaultConfiguration":[
+               {
                   "id":0,
                   "size":1,
                   "value":0
                },
-               {  
+               {
                   "id":1,
                   "size":1,
                   "value":0
@@ -532,79 +532,79 @@
             ]
          },
          "class":"other",
-         "capabilities":[  
+         "capabilities":[
             "onoff"
          ],
-         "images":{  
+         "images":{
             "large":"/drivers/ZM1602/assets/images/large.png",
             "small":"/drivers/ZM1602/assets/images/small.png"
          },
-         "settings":[  
-            {  
+         "settings":[
+            {
                "id":"siren_strobe_mode",
                "type":"dropdown",
-               "label":{  
+               "label":{
                   "en":"Siren strobe mode",
                   "nl":"Sirene en stroboscoop"
                },
                "value":"0",
-               "values":[  
-                  {  
+               "values":[
+                  {
                      "id":"0",
-                     "label":{  
+                     "label":{
                         "en":"Siren and strobe",
                         "nl":"Sirene en stroboscoop"
                      }
                   },
-                  {  
+                  {
                      "id":"1",
-                     "label":{  
+                     "label":{
                         "en":"Siren only",
                         "nl":"Alleen sirene"
                      }
                   },
-                  {  
+                  {
                      "id":"2",
-                     "label":{  
+                     "label":{
                         "en":"Strobe only",
                         "nl":"Alleen stroboscoop"
                      }
                   }
                ]
             },
-            {  
+            {
                "id":"alarm_auto_stop",
                "type":"dropdown",
-               "label":{  
+               "label":{
                   "en":"Alarm auto stop",
                   "nl":"Automatische alarm stop"
                },
                "value":"0",
-               "values":[  
-                  {  
+               "values":[
+                  {
                      "id":"0",
-                     "label":{  
+                     "label":{
                         "en":"30 seconds",
                         "nl":"30 seconden"
                      }
                   },
-                  {  
+                  {
                      "id":"1",
-                     "label":{  
+                     "label":{
                         "en":"60 seconds",
                         "nl":"60 seconden"
                      }
                   },
-                  {  
+                  {
                      "id":"2",
-                     "label":{  
+                     "label":{
                         "en":"120 seconds",
                         "nl":"120 seconden"
                      }
                   },
-                  {  
+                  {
                      "id":"3",
-                     "label":{  
+                     "label":{
                         "en":"No automatic stop",
                         "nl":"Geen automatische stop"
                      }
@@ -613,62 +613,62 @@
             }
          ]
       },
-      {  
+      {
          "id":"ZG8101",
-         "name":{  
+         "name":{
             "en":"Garage door Sensor",
             "nl":"Garagedeur Sensor"
          },
-         "zwave":{  
+         "zwave":{
             "manufacturerId":265,
-            "productTypeId":8202,
-            "productId":2562,
-            "learnmode":{  
+            "productTypeId":[8202,8195],
+            "productId":[2562,770],
+            "learnmode":{
                "image":"/drivers/ZG8101/assets/learnmode.svg",
-               "instruction":{  
+               "instruction":{
                   "en":"Press the button in your Door Sensor",
                   "nl":"Druk op de knop in de Deur Sensor"
                }
             },
-            "associationGroups":[  
+            "associationGroups":[
                1,2,3
             ]
          },
          "class":"sensor",
-         "capabilities":[  
+         "capabilities":[
             "alarm_contact",
             "measure_battery"
          ],
-         "images":{  
+         "images":{
             "large":"/drivers/ZG8101/assets/images/large.png",
             "small":"/drivers/ZG8101/assets/images/small.png"
          },
-         "settings":[  
-            {  
+         "settings":[
+            {
                "id":"input_alarm_cancellation_delay",
                "type":"number",
-               "label":{  
+               "label":{
                   "en":"Input Alarm Cancellation Delay",
                   "nl":"Ingang Alarm Annulerings Vertraging"
                },
-               "hint":{  
+               "hint":{
                   "en":"Sets the time (in seconds) then the alarm of the input wel cancel.\nRange: 0 - 65535",
                   "nl":"Zet de tijd (in seconden) wanneer de ingangs alarm zal annuleren.\nBereik: 0 - 65535"
                },
-               "attr":{  
+               "attr":{
                   "min":0,
                   "max":65535
                },
                "value":0
             },
-            {  
+            {
                "id":"led_status",
                "type":"checkbox",
-               "label":{  
+               "label":{
                   "en":"Status Change With LED",
                   "nl":"Status Veranderen Met LED"
                },
-               "hint":{  
+               "hint":{
                   "en":"Enable/Disable if the LED shows if the state changes.",
                   "nl":"Zet Aan/Uit of de LED de status verandering weergeeft."
                },
@@ -677,33 +677,33 @@
          ]
       }
    ],
-   "flow":{  
-      "actions":[  
-         {  
+   "flow":{
+      "actions":[
+         {
             "id":"turn_alarm_on",
-            "title":{  
+            "title":{
                "en":"Turn siren on",
                "nl":"Zet sirene aan"
             },
-            "args":[  
-               {  
+            "args":[
+               {
                   "name":"device",
                   "type":"device",
-                  "filter":"driver_id=ZM1601"
+                  "filter":"driver_id=ZM1601|ZM1602"
                }
             ]
          },
-         {  
+         {
             "id":"turn_alarm_off",
-            "title":{  
+            "title":{
                "en":"Turn off siren",
                "nl":"Zet sirene uit"
             },
-            "args":[  
-               {  
+            "args":[
+               {
                   "name":"device",
                   "type":"device",
-                  "filter":"driver_id=ZM1601"
+                  "filter":"driver_id=ZM1601|ZM1602"
                }
             ]
          }
