@@ -4,7 +4,7 @@
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.4.6",
+   "version":"1.4.7",
    "compatibility":">=0.9.3",
    "description":{
       "en":"Vision Security devices for Homey",
@@ -84,6 +84,37 @@
 			"value": false
 			}
 		]
+		},
+		{
+		"id": "ZS5101",
+		"name": {
+			"en": "Door/Window Sensor",
+			"nl": "Deur/Raam Sensor"
+		},
+		"zwave": {
+			"manufacturerId": 265,
+			"productTypeId": 8202,
+			"productId": 2561,
+			"learnmode": {
+			"image": "/drivers/ZS5101/assets/learnmode.svg",
+			"instruction": {
+				"en": "Press the button on your  Sensor",
+				"nl": "Druk op de knop op de Sensor"
+			}
+			},
+			"associationGroups": [
+			1,2,3
+			]
+		},
+		"class": "sensor",
+		"capabilities": [
+			"alarm_contact",
+			"measure_battery"
+		],
+		"images": {
+			"large": "/drivers/ZS5101/assets/images/large.png",
+			"small": "/drivers/ZS5101/assets/images/small.png"
+		}
 		},
         {
 		"id": "ZD2102Gen5",
