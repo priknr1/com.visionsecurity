@@ -642,7 +642,7 @@
                {  
                   "name":"device",
                   "type":"device",
-                  "filter":"driver_id=ZM1601"
+                  "filter":"driver_id=ZM1601|ZM1602"
                }
             ]
          },
@@ -656,7 +656,7 @@
                {  
                   "name":"device",
                   "type":"device",
-                  "filter":"driver_id=ZM1601"
+                  "filter":"driver_id=ZM1601|ZM1602"
                }
             ]
          }
