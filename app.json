@@ -4,7 +4,7 @@
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.4.6",
+   "version":"1.4.7",
    "compatibility":">=0.9.3",
    "description":{  
       "en":"Vision Security devices for Homey",
@@ -572,62 +572,34 @@
             "en":"Garage door Sensor",
             "nl":"Garagedeur Sensor"
          },
-         "zwave":{  
+         "zwave":
+		 {  
             "manufacturerId":265,
             "productTypeId":[8202,8195],
             "productId":[2562,770],
-            "learnmode":{  
+            "learnmode":
+			{  
                "image":"/drivers/ZG8101/assets/learnmode.svg",
-               "instruction":{  
+               "instruction":
+			   {  
                   "en":"Press the button in your Door Sensor",
                   "nl":"Druk op de knop in de Deur Sensor"
                }
             },
-            "associationGroups":[  
-               1,2,3
-            ]
+            "associationGroups":[1,2,3]
          },
          "class":"sensor",
-         "capabilities":[  
+         "capabilities":
+		 [  
             "alarm_contact",
+            "alarm_generic",
             "measure_battery"
          ],
-         "images":{  
+         "images":
+		 {  
             "large":"/drivers/ZG8101/assets/images/large.png",
             "small":"/drivers/ZG8101/assets/images/small.png"
-         },
-         "settings":[  
-            {  
-               "id":"input_alarm_cancellation_delay",
-               "type":"number",
-               "label":{  
-                  "en":"Input Alarm Cancellation Delay",
-                  "nl":"Ingang Alarm Annulerings Vertraging"
-               },
-               "hint":{  
-                  "en":"Sets the time (in seconds) then the alarm of the input wel cancel.\nRange: 0 - 65535",
-                  "nl":"Zet de tijd (in seconden) wanneer de ingangs alarm zal annuleren.\nBereik: 0 - 65535"
-               },
-               "attr":{  
-                  "min":0,
-                  "max":65535
-               },
-               "value":0
-            },
-            {  
-               "id":"led_status",
-               "type":"checkbox",
-               "label":{  
-                  "en":"Status Change With LED",
-                  "nl":"Status Veranderen Met LED"
-               },
-               "hint":{  
-                  "en":"Enable/Disable if the LED shows if the state changes.",
-                  "nl":"Zet Aan/Uit of de LED de status verandering weergeeft."
-               },
-               "value":true
-            }
-         ]
+         }
       }
    ],
    "flow":{  

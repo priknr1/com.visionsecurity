@@ -14,11 +14,14 @@ If you like the work, please help me buy a stroller for my future kid :D
 * ZD2102 Door/window sensor
 * ZP3111 4in1 sensor
 * ZP3102 PIR motion sensor
-* ZG8108 Garage door sensor
+* ZG8101 Garage door sensor
 * ZM1601 Battery Operated Siren
 * ZM1602 DC/AC Power Siren
 
 ## Revision History
+
+** V1.4.7
+* ZG8101  Extra input split
 
 ** V1.4.6
 * ZM1602 addod to flow actions
