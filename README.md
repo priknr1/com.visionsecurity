@@ -20,6 +20,9 @@ If you like the work, please help me buy a stroller for my future kid :D
 
 ## Revision History
 
+** V1.4.8
+* ZP3102  Tamper Motion and Binary contact split 
+
 ** V1.4.7
 * ZG8101  Extra input split
 

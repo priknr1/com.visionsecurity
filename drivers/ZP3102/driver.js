@@ -8,38 +8,19 @@ const ZwaveDriver	= require('homey-zwavedriver');
 module.exports = new ZwaveDriver( path.basename(__dirname), {
 	debug: false,
 	capabilities: {
-		'alarm_motion': [
-		{
-			'optional'					: true,
-			'command_class'				: 'COMMAND_CLASS_NOTIFICATION',
-			//'command_get'				: 'NOTIFICATION_GET',
-			'command_get_parser'		: function(){
-				return {
-						"V1 Alarm Type" : 0,
-						"Notification Type" : "Access Control",
-						"Event" : 0,
-					}
-				},
-			'command_report'			: 'NOTIFICATION_REPORT',
-			'command_report_parser'		: function( report ){
-				if (report['Event (Parsed)'] === 'Motion Detection, Unknown Location') {
-					return true;
-				}
-				
-				if (report['Event (Parsed)'] === 'Event inactive') {
-					return false;
-				}
-				
-				return null;
-			}
+		'alarm_motion': {
+			'command_class'				: 'COMMAND_CLASS_BASIC',
+			'command_report'			: 'BASIC_SET',
+			'command_report_parser': report => report['Value'] === 255
 		},
-		{
+
+		'alarm_generic':{
 			'optional': true,
 			'command_class': 'COMMAND_CLASS_SENSOR_BINARY',
 			'command_get': 'SENSOR_BINARY_GET',
 			'command_report': 'SENSOR_BINARY_REPORT',
 			'command_report_parser': report => report['Sensor Value'] === 'detected an event',
-		}],
+		},
 
 		'alarm_tamper': {
 			'optional': true,

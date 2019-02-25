@@ -4,7 +4,7 @@
       "en":"Vision Security",
       "nl":"Vision Security"
    },
-   "version":"1.4.7",
+   "version":"1.4.8",
    "compatibility":">=0.9.3",
    "description":{  
       "en":"Vision Security devices for Homey",
@@ -281,6 +281,7 @@
             "class": "sensor",
             "capabilities": [
                 "alarm_motion",
+                "alarm_generic",
                 "alarm_tamper",
                 "measure_temperature",
                 "measure_battery"
